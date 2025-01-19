@@ -5,6 +5,10 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
+    name: '',
+    hash: '#home'
+  },
+  {
     name: "ABOUT",
     hash: "#about",
   },
@@ -15,10 +19,6 @@ export const links = [
   {
     name: "SKILLS",
     hash: "#skills",
-  },
-  {
-    name: "RESUME",
-    hash: "#resume",
   },
   {
     name: "CONTACT",
@@ -40,6 +40,13 @@ export const projectsData = [
       "RNN model. FILL IN DESCRIPTION & REPLACE PHOTO",
     tags: ["Python", "TensorFlow", "Keras"],
     imageUrl: rmtdevImg,
+  },
+  {
+    title: "Apparel Portfolio",
+    description:
+      "Apparel Portfolio. Coming soon!",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
+    imageUrl: wordanalyticsImg,
   },
   {
     title: "Predictive Tree",
