@@ -16,7 +16,7 @@ export default function Header() {
     animate={{ y:0, x:"-50%", opacity: 5 }}
     transition={{ duration: 2 }}>
 
-      <div className="absolute left-8 top-3 text-2xl font-semibold text-gray-900 hover:text-gray-600 transition">
+      <div className="absolute left-8 top-3 text-lg font-semibold text-gray-900 hover:text-gray-600 transition sm:text-2xl">
         <Link href="#home" onClick={() => setActiveSection('')}>MYAN NGUYEN</Link>
       </div>
 

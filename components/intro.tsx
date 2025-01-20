@@ -8,9 +8,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
   const { ref } = useSectionInView('', 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section ref={ref} id='home' className="mb-28 max-w-[55rem] text-center sm:mb-0 scroll-mt-[100rem]">
@@ -60,7 +62,11 @@ export default function Intro() {
             }}>
             <Link 
             href='#contact'
-            className='group bg-white bg-opacity-25 border border-gray-900 text-gray-900 font-semibold px-7 py-3 flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 hover:bg-opacity-50 active:scale-105 transition cursor-pointer'>
+            className='group bg-white bg-opacity-25 border border-gray-900 text-gray-900 font-semibold px-7 py-3 flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 hover:bg-opacity-50 active:scale-105 transition cursor-pointer'
+            onClick={() => {
+              setActiveSection('CONTACT');
+              setTimeOfLastClick(Date.now());
+            }}>
             CONTACT ME HERE <BsArrowRight className='opacity-80 group-hover:translate-x-2 transition' />
             </Link>
             <a className='group bg-white bg-opacity-25 border border-gray-900 text-gray-900 font-semibold px-7 py-3 flex items-center gap-2 outline-none focus:scale-110 hover:scale-110 hover:bg-opacity-50 active:scale-105 transition cursor-pointer'
