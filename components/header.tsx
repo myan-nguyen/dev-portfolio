@@ -11,7 +11,7 @@ export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return <header className="z-[999] relative">
-    <motion.div className="fixed top-0 left-1/2 h-[4.2rem] w-full border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-0 sm:h-[3.6rem] sm:w-full sm:left-1/2"
+    <motion.div className="fixed top-0 left-1/2 h-[4.2rem] w-full border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-0 sm:h-[3.6rem] sm:w-full sm:left-1/2 dark:bg-gray-300"
     initial={{ y: -100, x:"-50%", opacity: 5 }}
     animate={{ y:0, x:"-50%", opacity: 5 }}
     transition={{ duration: 2 }}>
@@ -32,7 +32,7 @@ export default function Header() {
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y:0, opacity: 1 }}
                 transition={{ duration: 2 }}>
-                    <Link className={clsx("flex w-full items-center justify-center px-3 py-3 hover:text-gray-500 transition",
+                    <Link className={clsx("flex w-full items-center justify-center px-3 py-3 hover:text-gray-500 transition dark:text-slate-800",
                       { 'underline': activeSection === link.name,}
                     )} href={link.hash}
                     onClick={() => {

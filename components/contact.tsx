@@ -2,25 +2,19 @@
 
 import React from 'react'
 import { motion } from 'framer-motion';
-import { FaPaperPlane } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { sendEmail } from '@/actions/sendEmail';
+import SubmitBtn from './submit-btn';
+import toast from 'react-hot-toast';
 
 export default function Contact() {
     const { ref } = useSectionInView('CONTACT');
-
-    const sendEmail = async (formData: FormData) => {
-        'use server';
-
-        console.log('Running on server');
-        console.log(formData.get('senderEmail'));
-        console.log(formData.get('message'));
-    }
 
     return (
         <motion.section 
         ref={ref}
         id='contact'
-        className='mb-20 w-[min(100%,75rem)] sm:mb-28'
+        className='h-[45rem] mb-20 w-[min(100%,75rem)] sm:mb-28 sm:h-[45rem]'
         initial={{
             opacity: 0,
         }}
@@ -36,43 +30,41 @@ export default function Contact() {
             <div className='flex flex-row'>
                 <div className='flex flex-col justify-center w-1/2'>
                     <h2 className='text-3xl font-medium capitalize mb-8'>CONNECT WITH ME</h2>
-                    <p className='text-gray-700'>
+                    <p className='text-gray-700 dark:text-white'>
                         You can contact me directly with any inquiries at 
                         {' '}<a className='underline' 
                         href='mailto:myan_nguyen@brown.edu'>myan_nguyen@brown.edu</a>{' '} or through this form:
                     </p>
-                    <form className='mt-8 flex flex-col'
-                    action={async (formData) => {
-                        console.log(formData.get('senderEmail'));
-                        console.log(formData.get('message'));
+                    <form className='mt-8 flex flex-col dark:text-black'
+                    action={async formData =>  {
+                        const { data, error } = await sendEmail(formData);
+
+                        if (error) {
+                            toast.error(error);
+                            return;
+                        }
+
+                        toast.success('Email sent successfully!')
                     }}>
                         <input 
-                            className='h-14 px-4 borderBlack' 
+                            className='h-14 px-4 borderBlack dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' 
                             name='senderEmail'
                             type='email'
                             required
                             maxLength={500} 
                             placeholder='YOUR EMAIL' />
                         <textarea 
-                            className='h-52 my-3 borderBlack p-4' 
+                            className='h-52 my-3 borderBlack p-4 ark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none' 
                             name='message'
                             required
-                            maxLength={2000}
+                            maxLength={5000}
                             placeholder='YOUR MESSAGE' />
-                        <button 
-                            type='submit' 
-                            className='group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-opacity-50 active:scale-105 hover:bg-gray-950'>
-                                SUBMIT 
-                                <FaPaperPlane 
-                                    className='text-xs opacity-70 transition-all 
-                                        group-hover:translate-x-1
-                                         group-hover:-translate-y-1' />
-                        </button>
+                        <SubmitBtn/>
                     </form>
                 </div>
                 <div className='w-1/2 pl-20'>
                     <iframe
-                        src="https://drive.google.com/file/d/12gkMn_2SRg-uaTtVzdA8HZMBS6CG70BQ/preview?usp=sharing"
+                        src="https://drive.google.com/file/d/1VxqAPBi4JY_X64Ksk4loFz9MnAmWIVWp/preview?usp=sharing"
                         width="561px"
                         height="726px"
                         loading="lazy">

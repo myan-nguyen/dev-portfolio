@@ -1,7 +1,8 @@
 import React from "react";
 import devImg from "@/public/dev-port-ss.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import apparelImg from '@/public/apparel.png';
+import treeImg from '@/public/tree.png';
+import shakespeareImg from "@/public/shakespeare.png";
 
 export const links = [
   {
@@ -30,30 +31,30 @@ export const projectsData = [
   {
     title: "Developer Portfolio",
     description:
-      "I built the website you're looking at right now! FILL IN DESCRIPTION",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
+      "I built the website you're looking at right now! Created with React App, styled with Tailwind CSS, animations with Framer Motion and contact form component with Resend & React Email.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion", "React Email & Resend"],
     imageUrl: devImg,
   },
   {
     title: "Shakespeare Text Generation Model",
     description:
-      "RNN model. FILL IN DESCRIPTION & REPLACE PHOTO",
+      "I developed and trained an RNN model based on a dataset of Shakespeare's works, allowing users to input prompts and outputs a Shakespearean style text.",
     tags: ["Python", "TensorFlow", "Keras"],
-    imageUrl: rmtdevImg,
+    imageUrl: shakespeareImg,
   },
   {
     title: "Apparel Portfolio",
     description:
-      "Apparel Portfolio. Coming soon!",
+      "A digital collection of my designs. Coming soon!",
     tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: apparelImg,
   },
   {
     title: "Predictive Tree",
     description:
-      "Project built for my data structures class FILL IN DESCRIPTION & REPLACE PHOTO",
+      "Created a machine learning program from scratch utilizing decision tree structures, allowing user input of a set of variables and outputting a prediction of the target attribute.",
     tags: ["Java"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: treeImg,
   },
 ] as const;
 
