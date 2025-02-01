@@ -22,7 +22,7 @@ export default function About() {
             </p>
 
             <p className='mb-3'>
-                I am a Computer Science and Applied Math-Economics student at Brown University, and am always looking for new opportunities to gain experience, improve my technical abilities, and learn new technologies. 
+                I am a Applied Mathematics and Computer Science student at Brown University, and am always looking for new opportunities to gain experience, improve my technical abilities, and learn new technologies. 
                 As both a creative and analytical person, my favorite parts of programming include its 
                 {' '}<span className='italic'>problem solving</span> and {' '}<span className='italic'>design</span> aspects.
                 From past projects and research, I primarily have experience in working with 
