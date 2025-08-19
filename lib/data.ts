@@ -1,8 +1,10 @@
 import React from "react";
 import devImg from "@/public/dev-port-ss.png";
 import apparelImg from '@/public/apparel.png';
-import treeImg from '@/public/tree.png';
-import shakespeareImg from "@/public/shakespeare.png";
+import clubsImg from '@/public/clubsatbrown.png';
+import sensorsImg from '@/public/sensors.png';
+import glialinkImg from '@/public/glialink.png';
+//import shakespeareImg from "@/public/shakespeare.png";
 
 export const links = [
   {
@@ -29,19 +31,33 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "Developer Portfolio",
+    title: "Clubs@Brown",
     description:
-      "I built the website you're looking at right now! Created with React App, styled with Tailwind CSS, animations with Framer Motion and contact form component with Resend & React Email.",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Framer Motion", "React Email & Resend"],
-    imageUrl: devImg,
+      "An internal mobile app for Brown University centralizing club communication and  access to student organization information and events. Built with Abigail Flamer and Tiffany Xiao.",
+    tags: ["React Native", "Node.js", "Expo", "Android Studio", "Firebase", "Firestore"],
+    imageUrl: clubsImg,
   },
   {
-    title: "Shakespeare Text Generation Model",
+    title: "Multi-Sensor Sleep Classification",
     description:
-      "I developed and trained an RNN model based on a dataset of Shakespeare's works, allowing users to input prompts and outputs a Shakespearean style text.",
-    tags: ["Python", "TensorFlow", "Keras"],
-    imageUrl: shakespeareImg,
+      "Tested traditional algorithms against ML models to improve accuracy of sleep/wake classification, also modified LTA2V ML architecture.",
+    tags: ["Python", "PyTorch", "Pandas", "Matplotlib", "Scikit-learn"],
+    imageUrl: sensorsImg,
   },
+  {
+    title: "Glialink",
+    description:
+      "A social networking platform for biotech researchers to showcase projects, connect with labs, and attract funding. Implemented lab profiles, project feeds, and job recruitment tools. Demo launching Oct. 2025.",
+    tags: ["React", "Node.js", "TypeScript", "PostgreSQL", "Tailwind", "Turborepo"],
+    imageUrl: glialinkImg,
+  },
+  // {
+  //   title: "Shakespeare Text Generation Model",
+  //   description:
+  //     "I developed and trained an RNN model based on a dataset of Shakespeare's works, allowing users to input prompts and outputs a Shakespearean style text.",
+  //   tags: ["Python", "TensorFlow", "Keras"],
+  //   imageUrl: shakespeareImg,
+  // },
   {
     title: "Apparel Portfolio",
     description:
@@ -50,31 +66,35 @@ export const projectsData = [
     imageUrl: apparelImg,
   },
   {
-    title: "Predictive Tree",
+    title: "Developer Portfolio",
     description:
-      "Created a machine learning program from scratch utilizing decision tree structures, allowing user input of a set of variables and outputting a prediction of the target attribute.",
-    tags: ["Java"],
-    imageUrl: treeImg,
+      "I built the website you're looking at right now! Created with React App, styled with Tailwind CSS, animations with Framer Motion and contact form component with Resend & React Email.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion", "React Email & Resend"],
+    imageUrl: devImg,
   },
 ] as const;
 
 export const skillsData = [
   "Python",
   "Java",
-  "TensorFlow",
-  "Keras",
-  "SQL",
-  "HTML",
-  "CSS",
   "C/C++",
-  "JavaScript",
-  "TypeScript",
   "React",
+  "TypeScript",
   "React Native",
   "Next.js",
   "Node.js",
+  "PyTorch",
+  "TensorFlow/Keras",
+  "Prisma",
+  "PostgreSQL",
+  "Firebase/Firestore",
+  "Kotlin",
+  "AWS",
+  "HTML",
+  "CSS",
+  "JavaScript",
   "Docker",
-  "Forge/Alloy",
+  "Go",
   "Git",
   "Tailwind",
   "Framer Motion",

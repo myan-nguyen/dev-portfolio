@@ -22,20 +22,18 @@ export default function About() {
             </p>
 
             <p className='mb-3'>
-                I am a Applied Mathematics and Computer Science student at Brown University, and am always looking for new opportunities to gain experience, improve my technical abilities, and learn new technologies. 
-                As both a creative and analytical person, my favorite parts of programming include its 
-                {' '}<span className='italic'>problem solving</span> and {' '}<span className='italic'>design</span> aspects.
-                From past projects and research, I primarily have experience in working with 
-                {' '}<span className='underline'>Python, React, Java, and TensorFlow/Keras</span>.
-                I am currently looking for internships and similar opportunities for {' '}<span className='italic font-extrabold'>Summer 2025</span>. 
+                I am an Applied Mathematics and Computer Science student at Brown University with a passion for building creative, impactful technology from the ground up. I love the intersection of {' '}<span className='italic'>problem solving</span> and {' '}<span className='italic'>design</span>, whether it's developing machine learning models for health research or building full-stack applications with friends.
+                My technical experiences spans
+                {' '}<span className='underline'>Python, React, Next.js, TypeScript, Java, and TensorFlow/PyTorch</span>, gained through both research, startup, and personal projects.
+                I am currently looking for {' '}<span className='italic font-extrabold'>Summer 2026 software, PM, or startup internships and opportunities</span>. 
             </p>
 
-            <p>
+            {/* <p>
                 In my free time, I enjoy staying active, reading, cooking, playing piano, and designing clothes. 
                 Check out my apparel portfolio in my 
                 {' '}<span className='font-bold'>PROJECTS</span> section, which is also built with 
                 {' '}<span className='underline'>React, Next.js and TypeScript</span>!
-            </p>
+            </p> */}
         </motion.section>
 
   );

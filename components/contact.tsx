@@ -31,7 +31,7 @@ export default function Contact() {
                 <div className='flex flex-col justify-center w-1/2'>
                     <h2 className='text-3xl font-medium capitalize mb-8'>CONNECT WITH ME</h2>
                     <p className='text-gray-700 dark:text-white'>
-                        You can contact me directly with any inquiries at 
+                        Currently looking for Summer 2026 opportunities! You can contact me directly with any inquiries at 
                         {' '}<a className='underline' 
                         href='mailto:myan_nguyen@brown.edu'>myan_nguyen@brown.edu</a>{' '} or through this form:
                     </p>
@@ -64,7 +64,7 @@ export default function Contact() {
                 </div>
                 <div className='w-1/2 pl-20'>
                     <iframe
-                        src="https://drive.google.com/file/d/1pIHYhGtfNZMVxCiO_8RY6RxHBOfR3aIN/preview?usp=sharing"
+                        src="https://drive.google.com/file/d/1m2uTz1RE82H2tafqUIYNtKsJmh492_HO/preview?usp=sharing"
                         width="561px"
                         height="726px"
                         loading="lazy">

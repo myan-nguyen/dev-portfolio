@@ -43,7 +43,7 @@ export default function Intro() {
             <span className="font-bold">Hello! My name is Myan. </span> 
             I'm a {" "}
             <span className='italic'>developer and designer </span> 
-            with experience in front-end development and machine learning. 
+            with experience in full-stack development and machine learning. 
             I specialize in {" "} 
             <span className='underline'>Python, Java, React, Next.js, and TypeScript.</span>
              {" "}Feel free to check out my work below!
