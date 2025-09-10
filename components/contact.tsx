@@ -64,7 +64,7 @@ export default function Contact() {
                 </div>
                 <div className='w-1/2 pl-20'>
                     <iframe
-                        src="https://drive.google.com/file/d/1m2uTz1RE82H2tafqUIYNtKsJmh492_HO/preview?usp=sharing"
+                        src="https://drive.google.com/file/d/117SpdocbS5WI_n8SmeIy9y02vFko6x_m/preview?usp=sharing"
                         width="561px"
                         height="726px"
                         loading="lazy">
